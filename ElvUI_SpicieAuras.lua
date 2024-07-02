@@ -50,10 +50,28 @@ Sunfire = 89
 -- Paladin
 Blade of Justice = 100
 Judgement = 90
+
+-- Demon Hunter
+Sigil of Silence = 100
+Sigil of Misery = 99
+Frailty = 95
+Sigil of Flame = 90
+
+-- Shaman
+
+-- Mage
+
+-- Death Knight
+
+-- Warrior
+
+-- Hunter
+
+-- Evoker
+
+-- Monk
 ]],
 }
-
--- This is a test comment on the DEV branch to attempt to push to the live branch.
 
 -- Create a table to store the priority list
 local priority = {}
