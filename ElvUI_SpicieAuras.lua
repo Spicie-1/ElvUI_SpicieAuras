@@ -226,6 +226,7 @@ local function SpicieSortMethod(a, b, dir)
         if dir == 'DESCENDING' then
             return aura1 > aura2
         else
+            -- Ascending order
             return aura1 < aura2
         end
     end
