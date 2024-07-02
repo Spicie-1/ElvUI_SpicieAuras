@@ -1,3 +1,7 @@
+-- Debuff Aura Sorting ElvUI Plugin
+-- Author: Spicie
+-- Version: 1.0.0-beta
+
 local E, L, V, P, G = unpack(ElvUI); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local MyPlugin = E:NewModule('ElvUI_SpicieAuras', 'AceHook-3.0', 'AceEvent-3.0', 'AceTimer-3.0'); --Create a plugin within ElvUI and adopt AceHook-3.0, AceEvent-3.0 and AceTimer-3.0. We can make use of these later.
 local EP = LibStub("LibElvUIPlugin-1.0") --We can use this to automatically insert our GUI tables when ElvUI_Config is loaded.
