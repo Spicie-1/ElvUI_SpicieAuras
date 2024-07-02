@@ -46,6 +46,10 @@ Sap = 99
 Rip = 100
 Moonfire = 90
 Sunfire = 89
+
+-- Paladin
+Blade of Justice = 100
+Judgement = 90
 ]],
 }
 
