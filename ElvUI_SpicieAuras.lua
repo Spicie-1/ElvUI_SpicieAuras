@@ -249,8 +249,8 @@ local function SpicieSortMethod(a, b, dir)
         return p1 > p2
     else
         -- Sort by time remaining
-        local aura1 = a.noTime and math.huge or a.expiration or -math.huge
-        local aura2 = b.noTime and math.huge or b.expiration or -math.huge
+        local aura1 = a.expiration or -math.huge
+        local aura2 = b.expiration or -math.huge
         if dir == 'DESCENDING' then
             return aura1 > aura2
         else
