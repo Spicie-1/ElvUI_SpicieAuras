@@ -23,12 +23,13 @@ Eradication = 90
 
 -- Affliction Warlock
 Soul Rot = 100
-Seed of Corruption = 97
-Unstable Affliction = 95
-Agony = 94
-Corruption = 93
-Siphon Life = 92
-Vile Taint = 91
+Haunt = 99
+Seed of Corruption = 95
+Unstable Affliction = 94
+Agony = 93
+Corruption = 92
+Siphon Life = 91
+Vile Taint = 90
 Drain Soul = 80
 Drain Life = 80
 
@@ -215,6 +216,8 @@ The same number priority spells will be sorted by descending time remaining. Spe
 	}
 end
 
+-- Not currently used for anything
+--[==[
 --Function we can call when a setting changes.
 function MyPlugin:Update()
 	local enabled = E.db.ElvUI_SpicieAuras.TargetPriorityAuraSorting
@@ -225,6 +228,7 @@ function MyPlugin:Update()
 		print("Debuff priorty sorting disabled")
 	end
 end
+--]==]
 
 local function InsertPrioSortOption()
     E.Options.args.unitframe.args.individualUnits.args.target.args.debuffs.args.sortMethod.values.SPICIESORT = "Spicie's Priority Based"
@@ -295,7 +299,7 @@ function MyPlugin:Initialize()
     -- Plugin welcome message / finished loading
     self:ScheduleTimer(function()
         E:Print("|cff00ff00Spicie Auras Plugin Loaded!|r")
-    end, 10)
+    end, 3)
 end
 
 E:RegisterModule(MyPlugin:GetName()) --Register the module with ElvUI. ElvUI will now call MyPlugin:Initialize() when ElvUI is ready to load our plugin.
