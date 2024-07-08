@@ -280,11 +280,11 @@ end
 function MyPlugin:Initialize()
     -- Initialize the database with default values
     E.db.ElvUI_SpicieAuras.PriorityList = E.db.ElvUI_SpicieAuras.PriorityList or P["ElvUI_SpicieAuras"].PriorityList
+    -- Initalize priority list
+    InitializePriorityList()
 
     -- Register plugin so options are properly inserted when config is loaded
     EP:RegisterPlugin(addonName, function()
-        -- Initalize priority list
-        InitializePriorityList()
         MyPlugin.InsertOptions()
         self:RegisterEvent("ADDON_LOADED", "OnElvOptLoaded")
         InsertPrioSortOption()
