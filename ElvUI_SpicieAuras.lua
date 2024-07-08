@@ -79,6 +79,7 @@ Sigil of Flame = 90
 
 -- Create a table to store the priority list
 local priority = {}
+--local priority = E.db.ElvUI_SpicieAuras.PriorityList
 
 -- Function to parse the priority list string and convert it to a table
 local function ParsePriorityList(listString)
@@ -274,7 +275,7 @@ end
 
 function MyPlugin:Initialize()
     -- Initialize the database with default values
-    E.db.ElvUI_SpicieAuras = E.db.ElvUI_SpicieAuras or P["ElvUI_SpicieAuras"]
+    E.db.ElvUI_SpicieAuras.PriorityList = E.db.ElvUI_SpicieAuras.PriorityList or P["ElvUI_SpicieAuras"].PriorityList
 
     -- Register plugin so options are properly inserted when config is loaded
     EP:RegisterPlugin(addonName, function()
