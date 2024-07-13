@@ -16,27 +16,30 @@ local ElvUF = E.oUF
 P["ElvUI_SpicieAuras"] = {
     ["PriorityList"] = [[
 -- Destro Warlock
-Havoc = 100
-Immolate = 99
+Immolate = 100
+Havoc = 99
 Conflagrate = 98
 Eradication = 90
 
 -- Affliction Warlock
-Soul Rot = 100
-Haunt = 99
-Seed of Corruption = 95
-Unstable Affliction = 94
-Agony = 93
-Corruption = 92
-Siphon Life = 91
-Vile Taint = 90
+Unstable Affliction = 100
+Agony = 99
+Corruption = 98
+Siphon Life = 97
+Haunt = 96
+Soul Rot = 95
+Seed of Corruption = 94
+Vile Taint = 93
 Drain Soul = 80
 Drain Life = 80
 
 -- All Warlock
-Curse of Exhaustion = 50
-Curse of Tongues = 50
-Curse of Weakness = 50
+--Exhaustion
+334275 = 50
+--Tounges
+1714 = 50
+--Weakness
+702 = 50
 
 -- Shadow Priest
 Vampiric Touch = 100
